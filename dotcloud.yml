@@ -1,0 +1,8 @@
+www:
+  type: custom
+  buildscript: .dotcloudbuilder
+  #ports:
+  #  www: http
+  #process: ~/run
+db:
+  type: mongodb
