@@ -1,8 +1,8 @@
 www:
-  type: custom
-  buildscript: .dotcloudbuilder
-  #ports:
-  #  www: http
-  #process: ~/run
+  type: nodejs
+  postbuild: ~/current/.dotcloudbuilder
+  process: ~/run
+  config:
+    node_version: v0.8.x
 db:
   type: mongodb

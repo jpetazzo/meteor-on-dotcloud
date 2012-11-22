@@ -15,9 +15,9 @@ tar -C ~ -zxf /tmp/bundle.tar.gz
 cat >~/run <<EOF
 #!/bin/bash
 export MONGO_URL=\$DOTCLOUD_DB_MONGODB_URL/admin
-export PORT=\$PORT_WWW
+export PORT=\$PORT_NODEJS
 sleep 5 # give some time to MongoDB to come up
-exec ~/meteor/dev_bundle/bin/node bundle/main.js
+exec ~/meteor/dev_bundle/bin/node ~/bundle/main.js
 EOF
 chmod +x ~/run
     

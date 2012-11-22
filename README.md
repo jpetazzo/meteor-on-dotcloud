@@ -6,7 +6,7 @@ To deploy your Meteor application on dotCloud, add the following files to your m
 - .dotcloudbuilder
 - .dotcloudignore
 
-Then use the dotCloud CLI and do ``dotcloud push mymeteorappname``.
+Then push your app as a normal dotCloud app (i.e. ``dotcloud push``).
 One minute later, the URL to your app will be shown!
 
 ## Scaling
